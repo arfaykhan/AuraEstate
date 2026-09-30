@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  /* Button Electric Blue #0052FF */
+  --color-electric-blue: #0052ff;
+  --color-cyan-500: #0052ff;
+  --color-cyan-400: #0052ff;
+  --color-cyan-300: #0052ff;
+  --color-cyan-600: #0042cc;
+  --color-cyan-700: #003399;
+  --color-cyan-900: #002266;
+
+  --color-emerald-500: #059669;
+  --color-emerald-400: #059669;
+
+  --color-violet-500: #0052ff;
+  --color-violet-400: #0052ff;
+
+  --color-rose-500: #e11d48;
+  --color-rose-400: #f43f5e;
+
+  --font-sans: 'Inter', 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc;
+    color: #000000;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  p, span, h1, h2, h3, h4, h5, h6, a, label, input, select, textarea, button, li, td, th {
+    color: inherit;
+  }
+
+  ::selection {
+    background-color: #0052ff;
+    color: #ffffff;
+  }
+}
+
+/* Crisp White Card styling */
+.glass {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  color: #000000;
+}
+
+.glass-frost {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 10px 30px -4px rgba(0, 82, 255, 0.1);
+  color: #000000;
+}
+
+.glow-text {
+  color: #000000;
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+
+.btn-electric {
+  background-color: #0052ff;
+  color: #ffffff !important;
+  transition: all 0.2s ease;
+}
+
+.btn-electric:hover {
+  background-color: #0042cc;
+  color: #ffffff !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0052ff;
+}
